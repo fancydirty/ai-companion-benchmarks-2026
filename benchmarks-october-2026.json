@@ -1,0 +1,170 @@
+{
+  "dataset": "The Companion Lab — October 2026 Hands-On AI Companion Benchmark",
+  "sourceUrl": "https://thecompanionlab.com/",
+  "methodologyUrl": "https://thecompanionlab.com/audits/methodology/",
+  "bestAppsRoundupUrl": "https://thecompanionlab.com/best-ai-girlfriend-apps/",
+  "billingIndexUrl": "https://thecompanionlab.com/billing/",
+  "safetyIndexUrl": "https://thecompanionlab.com/safety/",
+  "compareIndexUrl": "https://thecompanionlab.com/compare/",
+  "alternativesIndexUrl": "https://thecompanionlab.com/alternatives/",
+  "finderQuizUrl": "https://thecompanionlab.com/quiz/",
+  "characterCreatorReplicasUrl": "https://thecompanionlab.com/try/",
+  "apps": [
+    {
+      "rank": 1,
+      "name": "Secrets AI",
+      "score": 8.3,
+      "scores": {
+        "talk": 9,
+        "create": 9,
+        "free": 7,
+        "price": 8
+      },
+      "monthlyWebUsd": 19.99,
+      "yearlyUsd": 109.99,
+      "descriptor": "S LABS INC 604-3295224 CA US",
+      "review": "https://thecompanionlab.com/reviews/secrets-ai/",
+      "safety": "https://thecompanionlab.com/is-secrets-ai-safe/",
+      "replica": "https://thecompanionlab.com/try/secrets/"
+    },
+    {
+      "rank": 2,
+      "name": "Nomi AI",
+      "score": 7.8,
+      "scores": {
+        "talk": 8,
+        "create": 6,
+        "free": 9,
+        "price": 8
+      },
+      "monthlyWebUsd": 15.99,
+      "yearlyUsd": 99.99,
+      "descriptor": null,
+      "review": "https://thecompanionlab.com/reviews/nomi-ai/",
+      "safety": "https://thecompanionlab.com/is-nomi-ai-safe/",
+      "replica": "https://thecompanionlab.com/try/nomi/"
+    },
+    {
+      "rank": 3,
+      "name": "SpicyChat AI",
+      "score": 7.5,
+      "scores": {
+        "talk": 7,
+        "create": 7,
+        "free": 8,
+        "price": 8
+      },
+      "monthlyWebUsd": 19.95,
+      "yearlyUsd": null,
+      "descriptor": "NDAI.CC 514-2860020 DE US",
+      "review": "https://thecompanionlab.com/reviews/spicychat-ai/",
+      "safety": "https://thecompanionlab.com/is-spicychat-ai-safe/",
+      "replica": "https://thecompanionlab.com/try/spicychat/"
+    },
+    {
+      "rank": 4,
+      "name": "Ourdream AI",
+      "score": 7,
+      "scores": {
+        "talk": 7,
+        "create": 9,
+        "free": 6,
+        "price": 6
+      },
+      "monthlyWebUsd": 19.99,
+      "yearlyUsd": 119.88,
+      "descriptor": "DREAMSTUDIOS.CO Limassol CY",
+      "review": "https://thecompanionlab.com/reviews/ourdream-ai/",
+      "safety": "https://thecompanionlab.com/is-ourdream-ai-safe/",
+      "replica": "https://thecompanionlab.com/try/ourdream/"
+    },
+    {
+      "rank": 5,
+      "name": "Kindroid AI",
+      "score": 6.8,
+      "scores": {
+        "talk": 9,
+        "create": 7,
+        "free": 5,
+        "price": 6
+      },
+      "monthlyWebUsd": 13.99,
+      "monthlyIosUsd": 15.99,
+      "yearlyUsd": 139.99,
+      "descriptor": null,
+      "review": "https://thecompanionlab.com/reviews/kindroid-ai/",
+      "safety": "https://thecompanionlab.com/is-kindroid-ai-safe/",
+      "replica": "https://thecompanionlab.com/try/kindroid/"
+    },
+    {
+      "rank": 6,
+      "name": "Xotic AI",
+      "score": 5.5,
+      "scores": {
+        "talk": 8,
+        "create": 7,
+        "free": 2,
+        "price": 5
+      },
+      "monthlyWebUsd": 24.99,
+      "yearlyUsd": 149.99,
+      "descriptor": "Xotic.ai Tallinn EE",
+      "review": "https://thecompanionlab.com/reviews/xotic-ai/",
+      "safety": "https://thecompanionlab.com/is-xotic-ai-safe/",
+      "replica": "https://thecompanionlab.com/try/xotic/"
+    },
+    {
+      "rank": 7,
+      "name": "GirlfriendGPT",
+      "score": 5.5,
+      "scores": {
+        "talk": 8,
+        "create": 7,
+        "free": 3,
+        "price": 4
+      },
+      "monthlyWebUsd": 15,
+      "yearlyUsd": 144,
+      "descriptor": "NDAI.CHAT 514-2860020 DE US",
+      "review": "https://thecompanionlab.com/reviews/girlfriendgpt/",
+      "safety": "https://thecompanionlab.com/is-girlfriendgpt-safe/",
+      "replica": "https://thecompanionlab.com/try/girlfriendgpt/"
+    },
+    {
+      "rank": 8,
+      "name": "Candy AI",
+      "score": 4.8,
+      "scores": {
+        "talk": 5,
+        "create": 8,
+        "free": 2,
+        "price": 4
+      },
+      "monthlyFirstUsd": 9.99,
+      "monthlyRenewalUsd": 13.99,
+      "yearlyUsd": 47.88,
+      "descriptor": "EverAI candy.ai MT",
+      "review": "https://thecompanionlab.com/reviews/candy-ai/",
+      "safety": "https://thecompanionlab.com/is-candy-ai-safe/",
+      "replica": "https://thecompanionlab.com/try/candy/"
+    },
+    {
+      "rank": 9,
+      "name": "DreamGF",
+      "score": 3.5,
+      "scores": {
+        "talk": 5,
+        "create": 4,
+        "free": 2,
+        "price": 3
+      },
+      "monthlyFirstUsd": 12.99,
+      "monthlyRenewalUsd": 25.98,
+      "yearlyUsd": 88.56,
+      "descriptor": "Dream AI dreamgf.ai RO",
+      "review": "https://thecompanionlab.com/reviews/dreamgf-ai/",
+      "safety": "https://thecompanionlab.com/is-dreamgf-ai-safe/",
+      "replica": "https://thecompanionlab.com/try/dreamgf/"
+    }
+  ]
+}
