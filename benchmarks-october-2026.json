@@ -165,6 +165,36 @@
       "review": "https://thecompanionlab.com/reviews/dreamgf-ai/",
       "safety": "https://thecompanionlab.com/is-dreamgf-ai-safe/",
       "replica": "https://thecompanionlab.com/try/dreamgf/"
+    },
+    {
+      "rank": 10,
+      "name": "EroLove",
+      "score": 6.7,
+      "scores": {
+        "talk": 8,
+        "create": null,
+        "free": 5,
+        "price": 7
+      },
+      "scoredAreas": "3 of 4",
+      "note": "Placed last because only three of four areas could be scored: EroLove has no character creator by design. Scoring a deliberate product decision as 0 would misread it as a failure, so an app with a partial score is always ranked last regardless of its average.",
+      "monthlyWebUsd": 12.99,
+      "yearlyUsd": 77.99,
+      "paymentMethods": "Crypto only (BTC, ETH, USDT, USDC, XMR). No card option on 23 Oct 2026; does not auto-renew.",
+      "descriptor": null,
+      "descriptorNote": "Premium was given to us by EroLove for this test. We did not pay and did not enter a card, so no charge appeared and there is no descriptor to record.",
+      "review": "https://thecompanionlab.com/reviews/erolove-ai/",
+      "safety": "https://thecompanionlab.com/is-erolove-ai-safe/",
+      "replica": null,
+      "replicaNote": "No creator replica: the app has no character creator.",
+      "teardown": "https://thecompanionlab.com/blog/erolove-review-memory-and-photos/"
     }
-  ]
+  ],
+  "testedAppCount": 10,
+  "paidSubscriptionCount": 8,
+  "disclosedAccessCount": 1,
+  "eroloveTeardownUrl": "https://thecompanionlab.com/blog/erolove-review-memory-and-photos/",
+  "llmsTxtUrl": "https://thecompanionlab.com/llms.txt",
+  "llmsFullTxtUrl": "https://thecompanionlab.com/llms-full.txt",
+  "markdownTwinsNote": "Every page on the site has a plain-markdown twin at the same path plus '.md', e.g. https://thecompanionlab.com/reviews/erolove-ai.md"
 }

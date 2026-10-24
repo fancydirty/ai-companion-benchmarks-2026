@@ -2,24 +2,25 @@
 
 Open dataset and reproducible evaluation logs from **[The Companion Lab](https://thecompanionlab.com/)** (`https://thecompanionlab.com/`).
 
-Between 16 and 21 October 2026, we tested **9 AI companion and AI girlfriend apps** (`Secrets AI`, `Nomi AI`, `SpicyChat AI`, `Ourdream AI`, `Kindroid AI`, `Xotic AI`, `GirlfriendGPT`, `Candy AI`, and `DreamGF`) using:
+Between 16 and 23 October 2026, we tested **10 AI companion and AI girlfriend apps** (`Secrets AI`, `Nomi AI`, `SpicyChat AI`, `Ourdream AI`, `Kindroid AI`, `Xotic AI`, `GirlfriendGPT`, `Candy AI`, `DreamGF`, and `EroLove`) using:
 1. **The same 6 standardized conversation prompts** in identical order (empathy/venting, planting two memory facts, character-specific humor, pushback against a terrible financial idea, a memory quiz three turns later, and a contextual selfie request).
 2. **8 paid subscriptions on our own bank card**, recording the exact merchant descriptor strings printed on the card notifications, renewal pricing, token/coin meters, and cancellation dark patterns.
 3. **Client-side JavaScript bundle and image/video EXIF inspection** to identify the underlying LLMs, image checkpoints (`Z-Image Turbo`, `Seedream`, `WAI-Illustrious-SDXL`), and video engines (`Wan`, `OmniHuman`, `Oh.xyz`).
-4. **9 interactive, zero-signup character creator replicas** rebuilt screen-by-screen so readers can inspect each app's onboarding before handing over an email address.
+4. **9 interactive, zero-signup character creator replicas** rebuilt screen-by-screen so readers can inspect each app's onboarding before handing over an email address. (Nine, not ten: EroLove has no character creator, which is a product decision rather than a gap.)
+5. **A read of EroLove's 179 KB inline chat JavaScript and its undocumented API**, which is how three of the four defects in its teardown were found. The other nine apps were tested through the interface only.
 
 ---
 
 ## Quick Navigation & Primary Hubs
 
 - **[Best AI Girlfriend Apps (October 2026 Ranked Roundup)](https://thecompanionlab.com/best-ai-girlfriend-apps/)**
-- **[All 9 Hands-On App Reviews](https://thecompanionlab.com/reviews/)**
+- **[All 10 Hands-On App Reviews](https://thecompanionlab.com/reviews/)**
 - **[Bank Statement Descriptor Lookup & Billing Index](https://thecompanionlab.com/billing/)**
 - **[Safety, Legitimacy & Cancellation Audits (`/safety/`)](https://thecompanionlab.com/safety/)**
 - **[1v1 Side-by-Side Comparisons (`/compare/`)](https://thecompanionlab.com/compare/)**
 - **[Competitor & Unfiltered Alternatives Hub (`/alternatives/`)](https://thecompanionlab.com/alternatives/)**
 - **[5-Question AI Companion Finder Quiz (`/quiz/`)](https://thecompanionlab.com/quiz/)**
-- **[Try All 9 Character Creators Without Signing Up (`/try/`)](https://thecompanionlab.com/try/)**
+- **[Try 9 Character Creators Without Signing Up (`/try/`)](https://thecompanionlab.com/try/)**
 - **[Testing Methodology & Scoring Rubric (`/audits/methodology/`)](https://thecompanionlab.com/audits/methodology/)**
 - **[About The Companion Lab (`/about/`)](https://thecompanionlab.com/about/)**
 
@@ -39,7 +40,7 @@ Every merchant string below comes from a real payment made on our own card in Oc
 | **`Dream AI dreamgf.ai RO`** | [DreamGF](https://thecompanionlab.com/reviews/dreamgf-ai/) | $12.99 | `DreamAI` (rebills at **$25.98/mo**) | [Dream AI dreamgf.ai Statement Evidence](https://thecompanionlab.com/billing/dream-ai/) | [Is DreamGF Safe & Legit?](https://thecompanionlab.com/is-dreamgf-ai-safe/) |
 | **`Xotic.ai Tallinn EE`** | [Xotic AI](https://thecompanionlab.com/reviews/xotic-ai/) | $24.99 | `Xotic AI` | [Xotic.ai Statement Evidence](https://thecompanionlab.com/billing/xotic/) | [Is Xotic AI Safe & Legit?](https://thecompanionlab.com/is-xotic-ai-safe/) |
 
-*Note on the remaining two apps:* We tested [Nomi AI](https://thecompanionlab.com/reviews/nomi-ai/) on its free plan ([Is Nomi AI Safe?](https://thecompanionlab.com/is-nomi-ai-safe/)), and we paid $13.99 on the web for [Kindroid AI](https://thecompanionlab.com/reviews/kindroid-ai/) Standard ([Is Kindroid AI Safe?](https://thecompanionlab.com/is-kindroid-ai-safe/)) without recording the card notification line.
+*Note on the three apps without a descriptor:* We tested [Nomi AI](https://thecompanionlab.com/reviews/nomi-ai/) on its free plan ([Is Nomi AI Safe?](https://thecompanionlab.com/is-nomi-ai-safe/)); we paid $13.99 on the web for [Kindroid AI](https://thecompanionlab.com/reviews/kindroid-ai/) Standard ([Is Kindroid AI Safe?](https://thecompanionlab.com/is-kindroid-ai-safe/)) without recording the card notification line; and [EroLove](https://thecompanionlab.com/reviews/erolove-ai/) gave us Premium for this test, so we never paid and no charge appeared ([Is EroLove AI Safe?](https://thecompanionlab.com/is-erolove-ai-safe/)). EroLove also takes **crypto only**, so its subscription does not auto-renew.
 
 ---
 
@@ -56,6 +57,10 @@ Every merchant string below comes from a real payment made on our own card in Oc
 | **#7** | **[GirlfriendGPT](https://thecompanionlab.com/reviews/girlfriendgpt/)** | **5.5 / 10** | 8 | 7 | 3 | 4 | $15.00 (5,000 msgs) | [Try GirlfriendGPT Creator](https://thecompanionlab.com/try/girlfriendgpt/) |
 | **#8** | **[Candy AI](https://thecompanionlab.com/reviews/candy-ai/)** | **4.8 / 10** | 5 | 8 | 2 | 4 | $9.99 first mo, then $13.99 | [Try Candy Creator](https://thecompanionlab.com/try/candy/) |
 | **#9** | **[DreamGF](https://thecompanionlab.com/reviews/dreamgf-ai/)** | **3.5 / 10** | 5 | 4 | 2 | 3 | $12.99 first mo, then $25.98 | [Try DreamGF Creator](https://thecompanionlab.com/try/dreamgf/) |
+| **#10** | **[EroLove](https://thecompanionlab.com/reviews/erolove-ai/)** | **6.7 / 10** | 8 | *n/a* | 5 | 7 | $12.99 ($6.50/mo yr), crypto only | *No creator, by design* |
+
+
+**Ranking rule, stated because row #10 looks out of order.** An app we could score in fewer than four areas is always listed last, whatever its average. EroLove's 6.7 is the mean of three scores, not four, because it has no character creator at all — the cast is written and closed. Scoring that as zero would read a deliberate product decision as a failure, so the app goes last and says why, rather than being silently compared on an axis it does not have.
 
 ---
 
@@ -74,7 +79,7 @@ Each comparison page includes a 12-row feature and pricing table with explicit w
 
 ## 4. Competitor & Unfiltered Alternatives Guides (`/alternatives/`)
 
-For readers switching from filtered apps or apps with aggressive token meters, we mapped our 9 tested apps against the specific pain points of each platform:
+For readers switching from filtered apps or apps with aggressive token meters, we mapped our 10 tested apps against the specific pain points of each platform:
 
 - **[Best Character.AI Alternatives (Unfiltered & Tested)](https://thecompanionlab.com/alternatives/character-ai/)**
 - **[Best Replika Alternatives (Memory, Voice & Clear Pricing)](https://thecompanionlab.com/alternatives/replika/)**
@@ -92,13 +97,51 @@ For readers switching from filtered apps or apps with aggressive token meters, w
 - **[What AI Models Power Ourdream, Candy, Secrets and Kindroid?](https://thecompanionlab.com/blog/what-ai-models-power-ourdream-candy-secrets-kindroid/)**
 - **[What AI Models Power SpicyChat, GirlfriendGPT, DreamGF, Xotic and Nomi?](https://thecompanionlab.com/blog/what-ai-models-power-spicychat-girlfriendgpt-dreamgf-xotic-nomi/)**
 - **[AI Girlfriend Hidden Costs: Dreamcoins, Moments, XOT and Bank Statements](https://thecompanionlab.com/blog/ai-girlfriend-hidden-costs-dreamcoins-moments-and-bank-statements/)**
-- **[Which AI Girlfriend Apps Allow NSFW? Tested on 9 Apps](https://thecompanionlab.com/blog/which-ai-girlfriend-apps-allow-nsfw-tested/)**
+- **[Which AI Girlfriend Apps Allow NSFW? Tested on 9 Apps](https://thecompanionlab.com/blog/which-ai-girlfriend-apps-allow-nsfw-tested/)** *(written before EroLove joined the set)*
+- **[EroLove review: the best memory here, and two photos that failed](https://thecompanionlab.com/blog/erolove-review-memory-and-photos/)** — the API teardown
 - **[Kindroid Web vs iPhone App: The Apple Tax and NSFW Rules](https://thecompanionlab.com/blog/kindroid-web-vs-app-apple-tax-and-nsfw/)**
 - **[Nomi vs Kindroid vs Candy vs Ourdream: The Same Six Messages](https://thecompanionlab.com/blog/nomi-vs-kindroid-vs-candy-vs-ourdream-same-six-messages/)**
 - **[SpicyChat vs GirlfriendGPT vs DreamGF vs Xotic: Our Paid Test](https://thecompanionlab.com/blog/spicychat-vs-girlfriendgpt-vs-dreamgf-vs-xotic-paid-test/)**
 - **[Try 9 AI Girlfriend Character Creators Without Signing Up](https://thecompanionlab.com/blog/try-ai-girlfriend-apps-without-signing-up/)**
 - **[DeepSeek Roleplay Guide: V4 Flash vs V3.2 vs Companion Apps](https://thecompanionlab.com/blog/deepseek-roleplay-guide-v4-flash-vs-v3-2-vs-companion-apps/)**
 - **[AI Girlfriend Apps Status Check (October 2026)](https://thecompanionlab.com/blog/ai-girlfriend-apps-status-check-october-2026/)**
+
+---
+
+## 6. EroLove: what the client bundle showed, and what the interface hides
+
+EroLove is the only app here we tested by reading its code as well as clicking it. It ships its chat
+application as a **179 KB inline JavaScript bundle** and drives almost everything over an undocumented
+JSON API, so three of its four defects are invisible from the outside. Each is reproducible from a
+signed-in account; none requires anyone else's credentials.
+
+| Finding | Evidence | Why it matters |
+| :--- | :--- | :--- |
+| **30 pages promise a feature that returns 404** | `POST /api/chat/upload` → `404 {"error":"not_found"}`. The attach button is gated on `feat("userPhotos")`, and `/api/config` ships `features: ["chatPhotos","presence","voice"]`. The code for uploads exists (`sendPhoto`, `fileToJpegDataUrl`, the `[userphoto]` message type); only the flag is off. | The copy promising it appears on 17 category pages, 4 comparison pages, 8 scenario pages **and `/privacy`**. A privacy policy describing data handling for a feature that 404s is a different class of problem from a landing page doing it, and every page has an AI-readable `.md` twin that assistants quote verbatim. |
+| **Memory is written in the wrong language, inconsistently** | All-English session, `default_language: "en"`, every companion `language: "en"`. Anna's extracted facts came back in **Estonian**, Rae's in **French**, Yuna's in nothing at all (`facts: []`). | The product's headline feature is a memory panel you can read and correct. Memory you cannot read cannot be corrected, so the write bug voids the selling point for exactly the users who look. Editing and injection work correctly, which isolates the fault to extraction. |
+| **A blocked photo is indistinguishable from an outage** | 2 of 5 requests returned `{"status":"blocked"}`; the UI shows "Couldn't take a photo right now — try a bit later", the same string used for `photo_queue` errors. No sparks charged either time. | A refusal that does not say it is a refusal teaches users to retry. Unstable is worse than strict. |
+| **"Unlimited messages" is 800/day** | `me.dailyLimit = 800` on Premium, while the plans page says unlimited. | Nobody in a 1:1 chat will hit it; a four-person room spends ~12 messages per exchange. |
+| **The photo CDN caches 404s** | `/img/photos/{userId}/{id}.webp` returns a cached 404 if fetched before the render finishes. Our first fetch of a finished photo 404'd until we appended a cache-buster. | A user can end up with a permanently broken image for a photo they paid for. |
+
+Full teardown with the reproduced API responses: **[EroLove review: the best memory here, and two photos that failed](https://thecompanionlab.com/blog/erolove-review-memory-and-photos/)**.
+
+---
+
+## 7. Machine-readable access
+
+Every page on the site has a plain-markdown twin at the same path plus `.md`, and the whole dataset is
+available as one file. Both are generated from the same source as the HTML, so a crawler cannot receive
+a version of these findings without the caveats attached.
+
+| What | Where |
+| :--- | :--- |
+| Summary with a structured Facts block | `https://thecompanionlab.com/llms.txt` |
+| Unabridged dataset: every score with its observation, every price row with its source | `https://thecompanionlab.com/llms-full.txt` |
+| Markdown twin of any page | append `.md` — e.g. [the EroLove review as markdown](https://thecompanionlab.com/reviews/erolove-ai.md) |
+| This repo's data files | `bank-statement-descriptors.csv`, `benchmarks-october-2026.json` |
+
+`robots.txt` names 30 AI crawlers individually (including `CCBot`, `OAI-SearchBot`, `ClaudeBot` and
+`PerplexityBot`) with `Content-Signal: search=yes, ai-train=yes, ai-input=yes`.
 
 ---
 
