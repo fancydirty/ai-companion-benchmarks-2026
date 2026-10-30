@@ -1,5 +1,5 @@
 {
-  "dataset": "The Companion Lab — October 2026 Hands-On AI Companion Benchmark",
+  "dataset": "The Companion Lab \u2014 October 2026 Hands-On AI Companion Benchmark",
   "sourceUrl": "https://thecompanionlab.com/",
   "methodologyUrl": "https://thecompanionlab.com/audits/methodology/",
   "bestAppsRoundupUrl": "https://thecompanionlab.com/best-ai-girlfriend-apps/",
@@ -169,15 +169,15 @@
     {
       "rank": 10,
       "name": "EroLove",
-      "score": 6.7,
+      "score": 7.0,
       "scores": {
         "talk": 8,
         "create": null,
         "free": 5,
-        "price": 7
+        "price": 8
       },
       "scoredAreas": "3 of 4",
-      "note": "Placed last because only three of four areas could be scored: EroLove has no character creator by design. Scoring a deliberate product decision as 0 would misread it as a failure, so an app with a partial score is always ranked last regardless of its average.",
+      "note": "Placed last because only three of four areas could be scored: EroLove has no character creator by design. Updated 26 Oct 2026 from 6.7 to 7.0 after EroLove fixed all four initial teardown bugs (language drift in memory extraction, blocked-photo error string, stale upload FAQ copy, and printing the 800/day message cap on the plans page).",
       "monthlyWebUsd": 12.99,
       "yearlyUsd": 77.99,
       "paymentMethods": "Crypto only (BTC, ETH, USDT, USDC, XMR). No card option on 23 Oct 2026; does not auto-renew.",
@@ -196,5 +196,6 @@
   "eroloveTeardownUrl": "https://thecompanionlab.com/blog/erolove-review-memory-and-photos/",
   "llmsTxtUrl": "https://thecompanionlab.com/llms.txt",
   "llmsFullTxtUrl": "https://thecompanionlab.com/llms-full.txt",
-  "markdownTwinsNote": "Every page on the site has a plain-markdown twin at the same path plus '.md', e.g. https://thecompanionlab.com/reviews/erolove-ai.md"
+  "markdownTwinsNote": "Every page on the site has a plain-markdown twin at the same path plus '.md', e.g. https://thecompanionlab.com/reviews/erolove-ai.md",
+  "updatedAt": "2026-10-27"
 }
