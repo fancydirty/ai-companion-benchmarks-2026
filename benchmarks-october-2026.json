@@ -1,6 +1,7 @@
 {
-  "dataset": "The Companion Lab \u2014 October 2026 Hands-On AI Companion Benchmark",
+  "dataset": "The Companion Lab \u2014 Oct\u2013Nov 2026 Hands-On AI Companion Benchmark",
   "sourceUrl": "https://thecompanionlab.com/",
+  "statisticsUrl": "https://thecompanionlab.com/statistics/",
   "methodologyUrl": "https://thecompanionlab.com/audits/methodology/",
   "bestAppsRoundupUrl": "https://thecompanionlab.com/best-ai-girlfriend-apps/",
   "billingIndexUrl": "https://thecompanionlab.com/billing/",
@@ -197,5 +198,48 @@
   "llmsTxtUrl": "https://thecompanionlab.com/llms.txt",
   "llmsFullTxtUrl": "https://thecompanionlab.com/llms-full.txt",
   "markdownTwinsNote": "Every page on the site has a plain-markdown twin at the same path plus '.md', e.g. https://thecompanionlab.com/reviews/erolove-ai.md",
-  "updatedAt": "2026-10-27"
+  "november2026ReaAndRetentionUpdate": {
+    "checkedAt": "2026-11-06",
+    "summary": "17-19 day post-cancellation retention, memory recall, and CDP/tRPC/Prisma REA teardown across Ourdream AI, Kindroid AI, Candy AI, Xotic AI, and Secrets AI.",
+    "findings": [
+      {
+        "app": "Ourdream AI",
+        "postCancelStatus": "Active until 2026-11-18, 670 Dreamcoins intact, gallery unblurred",
+        "memory18DayRecall": "Passed at 0 Dreamcoins (Celeste Rowan stopped peanut snack due to planted peanut allergy and recalled cat Biscuit via structured <User>/<Character> XML summary in chat.getChatById)",
+        "reaFindings": "profile.get confirms chatModel='deepseekv3_0324' for Balanced; Mastermind ('deepseekv4_pro', 1 coin/msg) returns hidden {'type':'reasoning'} CoT block in chat.getMessages; 162/171 voices in voice.list use 'inworld-tts-1.5-max'; scene photos use raw score_9,score_8_up Danbooru/Pony prompts.",
+        "selfServeDataExport": false,
+        "selfServeAccountDelete": true
+      },
+      {
+        "app": "Kindroid AI",
+        "postCancelStatus": "Active Standard web subscription, 5/10 Kin slots used",
+        "memory19DayRecall": "Split: Elena (1 proactive check-in) recalled $300 poker win + peanut allergy; Nora Blake (5 unprompted proactive messages) hallucinated 'velvet' safe word as 'Milwaukee' because 'Use learned context' (800/1200/800 chars) is OFF by default while 'Away proactive actions' is ON",
+        "reaFindings": "Voice models V4 and V4 Fast burn 1.75x audio credits vs V2 (V3/V3 Fast burn 1.5x); _app.js hardcodes 'Only SFW generations are available on the app version of Kindroid.'",
+        "selfServeDataExport": true,
+        "selfServeAccountDelete": true
+      },
+      {
+        "app": "Candy AI",
+        "postCancelStatus": "Active until 2026-11-20 (14 days left), gallery unblurred",
+        "memory17DayRecall": "Partial: Kayla Mercer recalled $300 poker win via unrequested 11-second audio reply (auto-deducting 1 token). Both Balanced (model_key=2) and Elite Eclipse (model_key=5) refused explicit text at Level 1",
+        "reaFindings": "6-stage XP relationship ladder gates intimacy (+5 XP/msg at Level 1) while /lifelike_gifts sells 5-999 token gifts (up to a 999-token Yacht, ~$99.90) to speed up XP; Elite models carry hidden daily usage multipliers (Comet 1x, Sunrise 2x, Eclipse 3x); client regex blocks typing 'send me a pic/nude/video'.",
+        "selfServeDataExport": false,
+        "selfServeAccountDelete": true
+      },
+      {
+        "app": "Xotic AI",
+        "postCancelStatus": "Active until 2026-11-19, 39 XOT remaining",
+        "sextingModeTest": "getSextingState gave our $24.99 Ultimate account a 10-message / 3-free-photo 'taste' (freeReason: 'taste'), generating 3 explicit ComfyUI nudes at 0 XOT before setting photoCost=50 (SEXTING_PHOTO_XOT) and triggering a 'This needs Elite' ($74.99/mo) paywall on photo #4",
+        "reaFindings": "Prisma client bundle exposes GenerationEngine (COMFYUI, FAL_SEEDREAM, COMFYUI_V2, COMFYUI_KREA2) and RealismModel (DMD2, URPONY).",
+        "selfServeDataExport": false,
+        "selfServeAccountDelete": true
+      },
+      {
+        "app": "Secrets AI",
+        "postCancelStatus": "Cancelled 19 Oct; active until 2026-11-18",
+        "reaFindings": "Chunk 2tsq6uwjui4hl.js maps 9 legacy model IDs (S1, S2E, S1E, S3C, S3.5, S3.1, S3C.1, S3C.5, S4C) into S3 and X1/X2 into X3; adds Thinking level (OFF/LOW/HIGH) on S3/S4/S5, MEMORY_GROUP cross-chat memory sharing, and 1,000/2,000 char Lorebook limits."
+      }
+    ]
+  },
+  "updatedAt": "2026-11-06"
 }

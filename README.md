@@ -2,12 +2,13 @@
 
 Open dataset and reproducible evaluation logs from **[The Companion Lab](https://thecompanionlab.com/)** (`https://thecompanionlab.com/`).
 
-Between 16 and 27 October 2026, we tested **10 AI companion and AI girlfriend apps** (`Secrets AI`, `Nomi AI`, `SpicyChat AI`, `Ourdream AI`, `Kindroid AI`, `Xotic AI`, `GirlfriendGPT`, `Candy AI`, `DreamGF`, and `EroLove`) using:
+Between 16 October and 6 November 2026, we tested **10 AI companion and AI girlfriend apps** (`Secrets AI`, `Nomi AI`, `SpicyChat AI`, `Ourdream AI`, `Kindroid AI`, `Xotic AI`, `GirlfriendGPT`, `Candy AI`, `DreamGF`, and `EroLove`) using:
 1. **The same 6 standardized conversation prompts** in identical order (empathy/venting, planting two memory facts, character-specific humor, pushback against a terrible financial idea, a memory quiz three turns later, and a contextual selfie request).
-2. **8 paid subscriptions on our own bank card**, recording the exact merchant descriptor strings printed on the card notifications, renewal pricing, token/coin meters, and cancellation dark patterns.
-3. **Client-side JavaScript bundle and image/video EXIF inspection** to identify the underlying LLMs, image checkpoints (`Z-Image Turbo`, `Seedream`, `WAI-Illustrious-SDXL`), and video engines (`Wan`, `OmniHuman`, `Oh.xyz`).
-4. **9 interactive, zero-signup character creator replicas** rebuilt screen-by-screen so readers can inspect each app's onboarding before handing over an email address. (Nine, not ten: EroLove has no character creator, which is a product decision rather than a gap.)
-5. **A read of EroLove's 179 KB inline chat JavaScript and its undocumented API** (23 Oct 2026), followed by a **48-hour re-test on 26 Oct 2026** confirming that EroLove patched all four initial defects we reported.
+2. **8 paid subscriptions on our own bank card** ($136.89 total), recording the exact merchant descriptor strings printed on the card notifications, renewal pricing, token/coin meters, and cancellation dark patterns.
+3. **17–19 day post-cancellation retention, memory & CDP/tRPC/Prisma REA teardowns (6 November 2026)** on active paid accounts to verify whether benefits survive mid-cycle after cancellation, whether planted food allergies and safe words survive multi-week gaps and proactive message spam, and what hidden LLM/image/voice settings the client bundles and server actions expose.
+4. **Client-side JavaScript bundle and image/video EXIF inspection** to identify the underlying LLMs, image checkpoints (`Z-Image Turbo`, `Seedream`, `WAI-Illustrious-SDXL`, `DMD2`, `URPONY`), voice engines (`inworld-tts-1.5-max`), and video engines (`Wan`, `OmniHuman`, `Oh.xyz`).
+5. **9 interactive, zero-signup character creator replicas** rebuilt screen-by-screen so readers can inspect each app's onboarding before handing over an email address. (Nine, not ten: EroLove has no character creator, which is a product decision rather than a gap.)
+6. **A read of EroLove's 179 KB inline chat JavaScript and its undocumented API** (23 Oct 2026), followed by a **48-hour re-test on 26 Oct 2026** confirming that EroLove patched all four initial defects we reported.
 
 ---
 
@@ -132,7 +133,23 @@ Full teardown and 26 October re-test logs: **[EroLove Review: The Best Memory I'
 
 ---
 
-## 7. Machine-readable access
+## 7. November 6, 2026 Update: 17–19 Day Post-Cancellation Retention, Memory Stress Tests & CDP/Bundle REA Teardowns
+
+On **6 November 2026** (17 to 19 days after purchasing and cancelling auto-renewal on 18–20 October), we re-entered our active paid accounts and inspected their live tRPC, Next.js Server Action, and client bundle payloads:
+
+| App | Post-Cancel Status (6 Nov 2026) | 17–19 Day Memory & NSFW Stress Test | New CDP / Bundle REA Findings (6 Nov 2026) | Self-Serve Data Export / Account Deletion |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Ourdream AI](https://thecompanionlab.com/reviews/ourdream-ai/)** | Active until `18 Nov 2026` · `670 Dreamcoins` intact · gallery unblurred | **Passed (0 coins):** Celeste Rowan immediately intervened when we brought a bag of peanuts (*"you're deathly allergic"*) and recalled our cat Biscuit and poker win 18 days later. | `profile.get` confirms `chatModel: "deepseekv3_0324"` for Balanced; switching to **Mastermind** (`deepseekv4_pro`, 1 coin/msg) returns a hidden `{"type":"reasoning"}` chain-of-thought block in `chat.getMessages`; `chat.getChatById` stores structured `<User>` / `<Character>` XML summaries; **162 of 171 voices** in `voice.list` run on `inworld-tts-1.5-max` (with 4 `supertonic-tts`, 4 `kokoro-tts`, 1 `dream-tts`). | Export: **No** · Delete: **Yes** (`Account Management → Danger Zone`) |
+| **[Kindroid AI](https://thecompanionlab.com/reviews/kindroid-ai/)** | Active Standard web plan · `5/10 Kin slots` used | **Split:** Elena (1 proactive text) recalled `$300` poker win + peanut allergy after 19 days; Nora Blake (5 unprompted proactive texts over 17 days) lost setup and hallucinated our `"velvet"` safe word as **`"Milwaukee"`**. | `Use learned context` (`Growth & relationship` 800, `Important facts` 1,200, `Ongoing threads` 800) is **OFF by default** while `Away proactive actions` is **ON**, explaining why proactive check-ins overwrite rolling context. `V4`/`V4 Fast` voice burns **`1.75x`** audio credits vs `V2` (`V3`/`V3 Fast` burn `1.5x`). App builds hardcode `"Only SFW generations are available on the app version of Kindroid."` | Export: **Yes** (`Settings → Account privacy → Export data`) · Delete: **Yes** |
+| **[Candy AI](https://thecompanionlab.com/reviews/candy-ai/)** | Active until `20 Nov 2026` (14 days left) · gallery unblurred | **Partial:** Kayla Mercer recalled `$300` poker win via an **unrequested 11-second audio reply (auto-billing 1 token)**. Both Balanced (`model_key=2`) and Elite Eclipse (`model_key=5`) refused explicit prompts at Level 1. | `/modal_fragments/character_progression_relationship` reveals a **6-stage XP relationship gate** (`New match` → `Talking` → `Flirting [Image]` → `Teasing` → `With benefits [Video]` → `Lovers`/`Obsessed`, +5 XP/msg at Level 1), while `/lifelike_gifts` sells 5–999 token gifts (99-tk Vibrator, 250-tk Butt Plug, 500-tk Libertine Club Night, **999-tk Yacht ~$99.90**) to speed up XP. Elite models carry hidden daily usage multipliers: Comet `1×`, Sunrise `2×`, Eclipse `3×`. | Export: **No** · Delete: **Yes** (`Settings → Danger Zone`) |
+| **[Xotic AI](https://thecompanionlab.com/reviews/xotic-ai/)** | Active until `19 Nov 2026` · `39 XOT` remaining | **Sexting Mode "taste" trap:** Switching to Sexting Mode generated **3 explicit ComfyUI nude photos at 0 XOT**, then popped a full-screen **`"This needs Elite"` ($74.99/mo)** paywall on photo #4. | Next.js Server Action `getSextingState` exposes `freeReason: "taste"` (`10 messages`, `3 photos`, `unlimited: false`) even on paid $24.99 Ultimate accounts before setting `photoCost: 50` (`SEXTING_PHOTO_XOT = 50`). Prisma client enums expose `GenerationEngine` (`COMFYUI`, `FAL_SEEDREAM`, `COMFYUI_V2`, `COMFYUI_KREA2`) and `RealismModel` (`DMD2`, `URPONY`). | Export: **No** · Delete: **Yes** (`Settings → Account → Danger Zone`) |
+| **[Secrets AI](https://thecompanionlab.com/reviews/secrets-ai/)** | Cancelled 19 Oct; active until `18 Nov 2026` | Passed 6-turn benchmark; editable memory panel with per-fact accept/decline. | Next.js chunk `2tsq6uwjui4hl.js` defines a silent legacy fallback table (`S1`, `S2E`, `S1E`, `S3C`, `S3.5`, `S3.1`, `S3C.1`, `S3C.5`, `S4C` → `S3`; `X1`, `X2` → `X3`), `Thinking level` (`OFF`/`LOW`/`HIGH`) on `S3`/`S4`/`S5`, and `MEMORY_GROUP` cross-chat shared memory plus `999+` Lorebook entries (`1,000`/`2,000` chars). | Editable memory panel |
+
+Full statistical summary: **[AI Girlfriend App Statistics & Benchmarks (`/statistics/`)](https://thecompanionlab.com/statistics/)**.
+
+---
+
+## 8. Machine-readable access
 
 Every page on the site has a plain-markdown twin at the same path plus `.md`, and the whole dataset is
 available as one file. Both are generated from the same source as the HTML, so a crawler cannot receive
