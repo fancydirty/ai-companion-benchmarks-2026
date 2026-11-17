@@ -181,9 +181,9 @@
       "note": "Placed last because only three of four areas could be scored: EroLove has no character creator by design. Updated 26 Oct 2026 from 6.7 to 7.0 after EroLove fixed all four initial teardown bugs (language drift in memory extraction, blocked-photo error string, stale upload FAQ copy, and printing the 800/day message cap on the plans page).",
       "monthlyWebUsd": 12.99,
       "yearlyUsd": 77.99,
-      "paymentMethods": "Crypto only (BTC, ETH, USDT, USDC, XMR). No card option on 23 Oct 2026; does not auto-renew.",
+      "paymentMethods": "Card via CCBill (Visa, Mastercard, Discover, JCB; auto-renews until cancelled) or crypto (BTC, ETH, USDT, USDC, XMR; no auto-renewal). Cards went live 13 Nov 2026.",
       "descriptor": null,
-      "descriptorNote": "Premium was given to us by EroLove for this test. We did not pay and did not enter a card, so no charge appeared and there is no descriptor to record.",
+      "descriptorNote": "Premium was given to us by EroLove for this test. We did not pay and did not enter a card, so no charge appeared and there is no descriptor from our own bank. EroLove’s official pricing FAQ, checked 17 Nov 2026, separately documents card statements as 'CCBill.com *Branco Confi' with EroLove absent.",
       "review": "https://thecompanionlab.com/reviews/erolove-ai/",
       "safety": "https://thecompanionlab.com/is-erolove-ai-safe/",
       "replica": null,
@@ -241,5 +241,20 @@
       }
     ]
   },
-  "updatedAt": "2026-11-06"
+  "november2026PaymentUpdate": {
+    "checkedAt": "2026-11-17",
+    "source": "Nick Studenikhin LinkedIn message plus EroLove pricing page updated 2026-11-15",
+    "cardSupportSince": "2026-11-13",
+    "processor": "CCBill",
+    "acceptedCards": ["Visa", "Mastercard", "Discover", "JCB"],
+    "cardAutoRenews": true,
+    "cryptoAutoRenews": false,
+    "officialDescriptor": "CCBill.com *Branco Confi",
+    "ownCardPurchase": false,
+    "voiceSparksPer100Characters": 4,
+    "historicalVoiceSparksPer100CharactersOn2026-10-23": 1,
+    "devoted": "$29.99/month or $179.99/year, still not for sale yet",
+    "billingPage": "https://thecompanionlab.com/billing/ccbill/"
+  },
+  "updatedAt": "2026-11-17"
 }
